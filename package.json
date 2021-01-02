@@ -1,0 +1,35 @@
+{
+  "name": "@brndnln/jst",
+  "version": "1.0.0",
+  "description": "A JavaScript Toolbox",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "node dist/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brndnln/jst.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "toolbox"
+  ],
+  "author": "Brendan Lane",
+  "license": "LGPL-2.1-or-later",
+  "bugs": {
+    "url": "https://github.com/brndnln/jst/issues"
+  },
+  "homepage": "https://github.com/brndnln/jst#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "eslint": "^7.17.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "ts-standard": "^10.0.0"
+  }
+}

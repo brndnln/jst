@@ -42,8 +42,8 @@ build/Release
 node_modules/
 jspm_packages/
 
-# TypeScript v1 declaration files
-typings/
+# TypeScript v1 declaration files (UNIGNORED DUE TO STORAGE OF LIBRARY TYPINGS)
+# typings/
 
 # TypeScript cache
 *.tsbuildinfo
@@ -225,3 +225,5 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/intellij,visualstudiocode
 
 # -> Custom
+src/test.ts
+dist/test.js

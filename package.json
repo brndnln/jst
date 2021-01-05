@@ -31,5 +31,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "ts-standard": "^10.0.0"
+  },
+  "dependencies": {
+    "lolcatjs": "^2.4.0"
   }
 }

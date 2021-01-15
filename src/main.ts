@@ -21,24 +21,14 @@ const lolcatDefaultConfig = {
   colors: true
 }
 
-let newLolcatConfig: lolcatConfig = {
-  animate: undefined,
-  duration: undefined,
-  seed: undefined,
-  speed: undefined,
-  spread: undefined,
-  freq: undefined,
-  colors: undefined
-}
-
 // Type declarations & interfaces
 interface lolcatConfig {
-  animate?: boolean,
-  duration?: number,
-  seed?: number,
-  speed?: number,
-  spread?: number,
-  freq?: number,
+  animate?: boolean
+  duration?: number
+  seed?: number
+  speed?: number
+  spread?: number
+  freq?: number
   colors?: boolean
 }
 
@@ -49,43 +39,45 @@ function getArrayPos (search: any, array: any[]): number {
   }).indexOf(search)
 }
 
-function rainbow (text: string, config: lolcatConfig): string {
+function rainbow (text: string, config?: lolcatConfig): string {
   // noinspection DuplicatedCode
-  if (config.animate === undefined) {
-    lolcatjs.options.animate = lolcatDefaultConfig.animate
-  } else {
-    lolcatjs.options.animate = config.animate
-  }
-  if (config.duration === undefined) {
-    lolcatjs.options.duration = lolcatDefaultConfig.duration
-  } else {
-    lolcatjs.options.duration = config.duration
-  }
-  if (config.seed === undefined) {
-    lolcatjs.options.seed = lolcatDefaultConfig.seed
-  } else {
-    lolcatjs.options.seed = config.seed
-  }
-  // noinspection DuplicatedCode
-  if (config.speed === undefined) {
-    lolcatjs.options.speed = lolcatDefaultConfig.speed
-  } else {
-    lolcatjs.options.speed = config.speed
-  }
-  if (config.spread === undefined) {
-    lolcatjs.options.spread = lolcatDefaultConfig.spread
-  } else {
-    lolcatjs.options.spread = config.spread
-  }
-  if (config.freq === undefined) {
-    lolcatjs.options.freq = lolcatDefaultConfig.freq
-  } else {
-    lolcatjs.options.freq = config.freq
-  }
-  if (config.colors === undefined) {
-    lolcatjs.options.colors = lolcatDefaultConfig.colors
-  } else {
-    lolcatjs.options.colors = config.colors
+  if (config !== undefined) {
+    if (config.animate === undefined) {
+      lolcatjs.options.animate = lolcatDefaultConfig.animate
+    } else {
+      lolcatjs.options.animate = config.animate
+    }
+    if (config.duration === undefined) {
+      lolcatjs.options.duration = lolcatDefaultConfig.duration
+    } else {
+      lolcatjs.options.duration = config.duration
+    }
+    if (config.seed === undefined) {
+      lolcatjs.options.seed = lolcatDefaultConfig.seed
+    } else {
+      lolcatjs.options.seed = config.seed
+    }
+    // noinspection DuplicatedCode
+    if (config.speed === undefined) {
+      lolcatjs.options.speed = lolcatDefaultConfig.speed
+    } else {
+      lolcatjs.options.speed = config.speed
+    }
+    if (config.spread === undefined) {
+      lolcatjs.options.spread = lolcatDefaultConfig.spread
+    } else {
+      lolcatjs.options.spread = config.spread
+    }
+    if (config.freq === undefined) {
+      lolcatjs.options.freq = lolcatDefaultConfig.freq
+    } else {
+      lolcatjs.options.freq = config.freq
+    }
+    if (config.colors === undefined) {
+      lolcatjs.options.colors = lolcatDefaultConfig.colors
+    } else {
+      lolcatjs.options.colors = config.colors
+    }
   }
 
   return lolcatjs.fromString(text)

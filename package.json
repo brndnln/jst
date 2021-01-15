@@ -21,6 +21,7 @@
   "bugs": {
     "url": "https://github.com/brndnln/jst/issues"
   },
+  "typings": "typings/main.d.ts",
   "homepage": "https://github.com/brndnln/jst#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.11.1",
